@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tcc_consultorioDataSet" targetNamespace="http://tempuri.org/tcc_consultorioDataSet8.xsd" xmlns:mstns="http://tempuri.org/tcc_consultorioDataSet8.xsd" xmlns="http://tempuri.org/tcc_consultorioDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="tcc_consultorioConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="tcc_consultorioConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp2.Properties.Settings.GlobalReference.Default.tcc_consultorioConnectionString2" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="pacienteTableAdapter" GeneratorDataComponentClassName="pacienteTableAdapter" Name="paciente" UserDataComponentName="pacienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="tcc_consultorioConnectionString2 (Settings)" DbObjectName="tcc_consultorio.paciente" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_paciente, nome_paciente, rg_paciente, cpf_paciente, nasc_paciente, cel_paciente, tel_paciente, endereco_paciente, email_paciente, estcivil_paciente, profissao_paciente, inicio_tratamento, termino_tratamento, estado_tratamento, anotacoes_paciente, cor_dente, forma FROM paciente</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tcc_consultorioDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="tcc_consultorioDataSet" msprop:Generator_UserDSName="tcc_consultorioDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="paciente" msprop:Generator_TableClassName="pacienteDataTable" msprop:Generator_TableVarName="tablepaciente" msprop:Generator_TablePropName="paciente" msprop:Generator_RowDeletingName="pacienteRowDeleting" msprop:Generator_RowChangingName="pacienteRowChanging" msprop:Generator_RowEvHandlerName="pacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="pacienteRowDeleted" msprop:Generator_UserTableName="paciente" msprop:Generator_RowChangedName="pacienteRowChanged" msprop:Generator_RowEvArgName="pacienteRowChangeEvent" msprop:Generator_RowClassName="pacienteRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
